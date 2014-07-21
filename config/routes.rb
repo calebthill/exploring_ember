@@ -1,5 +1,17 @@
-Rails.application.routes.draw do
-  resources :posts
+# Rails.application.routes.draw do
+#   get 'ember/start'
+
+#   resources :posts
+
+EmberTester::Application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :posts
+    end
+  end
+
+  root "ember#start"
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
