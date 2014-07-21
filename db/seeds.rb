@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Post.create(
+  title: "Caleb Thill learns Ember.js",
+  body: "Follow Calebs journey learning ember! it will be super awesome!!! wahoo!"
+  )
